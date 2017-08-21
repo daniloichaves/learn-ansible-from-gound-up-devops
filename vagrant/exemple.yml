@@ -1,0 +1,12 @@
+---
+  name: Danilo
+  Job: DevOps
+  skill: 
+    - java
+    - Jenkins
+    - Ansible
+    - scripts: 
+      - bash
+      - js
+      - zsh: "this is the best"
+  
