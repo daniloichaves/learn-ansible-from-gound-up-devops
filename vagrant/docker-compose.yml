@@ -1,0 +1,23 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+    - "80:80"
+    - "8080:8080"
+    - "2222:22"
+    environment:
+      http_proxy: http://172.18.218.60:8080
+      https_proxy: http://172.18.218.60:8080
+    stdin_open: true
+    tty: true
+  database:
+    build: .
+    ports:
+    - "3306:3306"
+    - "2223:22"
+    environment:
+      http_proxy: http://172.18.218.60:8080
+      https_proxy: http://172.18.218.60:8080
+    stdin_open: true
+    tty: true
