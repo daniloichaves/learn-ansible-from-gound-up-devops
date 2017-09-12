@@ -1,7 +1,18 @@
 [hosts]
-client1 ansible_host=192.168.33.10 ansible_user=vagrant
-server1 ansible_host=192.168.33.20 ansible_user=vagrant
+client1 ansible_host=localhost ansible_user=vagrant
+#server1 ansible_host=192.168.33.20 ansible_user=vagrant
+webserver1 ansible_host=192.168.33.30 ansible_user=vagrant
+#jenkins1 ansible_host=192.168.33.40 ansible_user=vagrant
+database1 ansible_host=192.168.33.50 ansible_user=vagrant
 
 [servers]
-192.168.33.20
+#192.168.33.20
 
+[web]
+192.168.33.30
+
+[jenkins]
+#192.168.33.40
+
+[db]
+192.168.33.50
